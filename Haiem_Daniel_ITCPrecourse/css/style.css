@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, lightgray, white);
+  font-family: 'Montserrat', 'Lato', 'Roboto', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  background-color: #3d6ded;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 120px;
+}
+
+.card {
+  /* border: 3px dashed pink;  DON'T FORGET THIS!!!!! */
+  align-items: center;
+  background-image: linear-gradient(to bottom right, white, lightgray);
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+  padding: 50px;
+  margin-top: 5rem; /* I ADDED THIS */
+}
+
+.nav-item {
+  align-self: flex-end;
+  color: #3d6ded;
+  font-size: 18px;
+  margin: 15px;
+  text-decoration: none;
+}
+
+.page-wrapper {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  /* background-color: black; */
+  border-radius: 50%;
+  color: white;
+  font-size: 32px;
+  height: 180px;
+  margin: 50px;
+  width: 180px;
+}
+
+nav {
+  /* ADD BORDERS MAYBE? */
+  position: fixed; /* step 2: fix navbar */
+  top: 0;
+  width: 100%;
+  
+}
+
+nav ul {
+  /* border: 3px solid red; */
+	margin: 0rem;
+	padding: 0;
+	list-style-type: none; /* gets rid of bullet points */
+  text-align: center;
+}
+
+nav li {
+  /* border: 3px solid yellow; */
+  padding: 0.05rem;
+  display: inline-block;
+}
+
+nav a {
+  /* border: 3px solid green; */
+  text-decoration: none; /* determines underline on link, if want no link write “none” */
+  display: block;
+}
+
+nav a:link {
+  color: #CDCDCD;
+}
+
+nav a:visited {
+  color: #CDCDCD;
+}
+
+nav a:hover {
+  color: white; 
+
+}
+
+div.flex-parent {
+  list-style: none; /* gets rid of bullets */
+  padding: 0.8rem 0 0.8rem 3rem;
+	margin: 0 0rem 0 0;
+	display: flex; /* turns the list items horizontally */
+  flex-direction: row;
+	flex-wrap: nowrap;
+  align-content: normal;
+	justify-content: center;
+  align-items: stretch;
+}
+
+a.flex-child {
+  /* flex-basis: ; /* YOU MAY NOT NEED THIS */
+  /* border: 3px solid yellow; */
+  margin-right: 2rem;
+}
+
+.borderbox {
+  box-sizing: border-box; /* HAVE TO PUT IN ALL HTML TO WORK (ALIGNS BOXES */
+}
+
+.bcnav {
+  background-color: #4F5E75; /* CHANGE THIS LATER */
+  border-bottom: 2px solid black;
+}
+
+.tac {
+  text-align: center;
+  }
+
+.tacfs {
+  font-size: 2rem;
+}
+
+.tceul {
+  list-style: none;
+  text-align: center;
+  padding: 0 0.5rem 0 .5rem;
+}
+
+.tceli {
+  display: inline-block;
+  font-size: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: black;
+}
+
+.tceli a:link {
+  color: black;
+}
+
+.tceli a:visited {
+  color: black;
+}
+
+.tceli a:hover {
+  color: #4F5E75; 
+
+}
+
+
+
+
+
