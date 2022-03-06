@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
+        <script src="https://kit.fontawesome.com/432bcb5cc2.js" crossorigin="anonymous"></script>
+      <link href="css/style.css" rel="stylesheet" />    <title>About</title>
+  </head>
+  <body>
+    <nav>
+      <div class="flex-parent nav-item borderbox bcnav">
+        <a href="./index.html" class="flex-child">Home</a>
+        <a href="about.html" class="flex-child">About</a>
+        <a href="contact.html" class="flex-child">Contact</a>
+      </div> 
+    </nav>
+
+    <section class="about-me">
+      <div>
+        <h1>Why Coding?</h1>
+        <p>Growing up I never had much exposure to computers, not for lack of my age, but rather my parents believed that spending time outdoors in nature would be more beneficial to my upbringing. As a result, I had little interest in pursuing a degree in computer science. In fact, I didn’t know what I wanted to do at University all the way to graduation!
+        <br><br>After graduating and entering the workforce, I quickly learned that being “tech-savvy” had many benefits, mainly, <strong>AUTOMATION!</strong>  I taught myself Excel from a progression as beginner learning simple functions such as vlookups/xlookups and pivot tables to an intermediate knowledge understanding nesting functions such as index + match, to an advanced level mastering power pivot. This passion for automating tasks spread to learning Power BI and SQL too!
+        <br><br>Fast forward to 2019, one year before my 30th birthday, I told myself that I wanted to do two things: first, move to Israel, the startup nation, and second to work in hi-tech. I didn’t know exactly what role I wanted to do, but I knew that I wanted to create something. 
+        <br><br>After arriving to Israel, I began Ulpan, Hebrew language classes, and had a conversation with my new flat mate/friend that sparked my interest in learning coding. He explained that <em>during the period of early man there were those that started to speak for the first time and created languages to do so. There were also early humans who resisted to learn to speak and that those who learned to speak advanced. Just like in the past, today humans have created computer programming languages for the first time and those who learn to “speak” these languages will advance.</em>  I agree 100%!
+        <br><br>There is a famous Chinese proverb that says: <i>“The best time to plant a tree was 20 years ago. The second best time is now.”</i> While I can’t travel to my past, I can start learning to code today and fulfill my new goal of creating applications and programs to automate things!
+        </p>
+        <h1>Experience</h1>
+        <p>After graduating from the University of California at Santa Barbara with my bachelor's degree in Economics I entered the workforce as an accountant. During this time, I had the opportunity to learn a vast amount of accounting knowledge from how to prepare financial statements to ensuring GAAP compliance. I improved my Excel skills from beginner to master and as a result transitioned from accountant to financial analyst. I initiated projects that saved time and increased profits by automating tasks and providing detailed analysis. I held group training for colleagues, passing down my knowledge by teaching them tools and techniques to improve productivity.  I look forward to applying my experience and knowledge to programming in my next position.</p>
+        <h1>Interests</h1>
+        <p>I love hiking and spending time in nature. My favorite place to hike in California is Yosemite and in Israel is Ein Gedi. My goal is to hike the Israel National Trail!
+        <br><br>I enjoy playing casual board games with friends. Nothing dangerous like Monopoly though – I want to keep my friends! Currently, my favorite board game is Dixit.
+        <br><br>My favorite TV genres are anime, action adventure and dark comedy. I recommend One Piece, Squid Games, The Witcher and Rick and Morty. I’m a little behind on One Piece, so please, no spoilers!
+        </p>
+      </div>
+
+      <div class="map-wrapper">
+        <div class="btns" id="btn">
+          <button disabled class="btn prev">Prev</button> <!--we disable this b/c initially you can't go prev-->
+          <button class="btn next">Next</button>
+        </div>
+        <div class="cities">
+          <h1>Cities I Have Lived:</h1>
+          <ul>
+            <!-- Create ID's for city/country so that we can use one iframe for google maps, insert into Template String -->
+            <li>Los Angeles</li>
+            <p id="Los Angeles USA" class="citySelect active">I was born, raised and spent most of my adult life in Los Angeles. I have many great memories here and hope to visit again soon!</p>
+            <li>Santa Barbara</li>
+            <p id="Santa Barbara USA" class="citySelect">I attended the University of California at Santa Barbara where I gained an in-depth knowledge of economics and also developed my communication, analytical and problem solving skills while enhancing my ability to work as part of a team.</p>
+            <li>Haifa</li>
+            <p id="Haifa Israel" class="citySelect">Once I landed in Israel and after I spent my first month in Ramat Gan, I moved to the industrious city of Haifa where I continue to study Hebrew at Ulpan Etzion until March. Who knows which city I will live in next!</p>
+          </ul>
+        </div>
+
+        <div class="map">
+
+          <!-- generated map, given in ITC FAQ, https://www.maps.ie/create-google-map/ . First src must have location but we can use one iframe by implementing Template Strings ${insert city name country}.  -->
+
+          <iframe id="iframeID" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=Los%20Angeles,%20USA+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+          </iframe>
+
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      
+      
+      <div class="flex-parent-footer nav-item borderbox">
+        <a href="./index.html" class="flex-child">Home</a>
+        <a href="about.html" class="flex-child">About</a>
+        <a href="contact.html" class="flex-child">Contact</a>
+      </div>
+      <div class="footer-languages">
+      <span id="languages"></span>
+      <br>
+      &#169; Israel Tech Challenge
+      </div>
+
+      <ul class="tceul"> <!-- step 3: add 3 clickable elements -->
+        <li class="tceli"><a href="https://www.linkedin.com/in/danielhaiem/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li class="tceli"><a href="https://github.com/danielhaiem" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li class="tceli"><a href="https://stackoverflow.com/users/17967931/daniel-haiem?tab=profile" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>
+      </ul>
+    </footer>
+    <script src="./js/portafolio.js"></script>
+  </body>
+</html>

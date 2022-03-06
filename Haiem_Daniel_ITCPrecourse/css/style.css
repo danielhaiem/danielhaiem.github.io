@@ -1,0 +1,383 @@
+* {
+  box-sizing: border-box;
+}
+/* =====ALL====== */
+body {
+  background-image: linear-gradient(to bottom right, lightgray, white);
+  font-family: 'Montserrat', 'Lato', 'Roboto', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  background-color: #3d6ded;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 120px;
+}
+
+
+/* ======NAV====== */
+.nav-item {
+  align-self: flex-end;
+  /* color: #3d6ded; */
+  font-size: 18px;
+  /* margin: 15px; */
+  text-decoration: none;
+}
+
+nav {
+  position: fixed; /* step 2: fix navbar */
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+	margin: 0rem;
+	padding: 0;
+	list-style-type: none; /* gets rid of bullet points */
+  text-align: center;
+}
+
+nav li {
+  padding: 0.05rem;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none; /* determines underline on link, if want no link write “none” */
+  display: block;
+}
+
+/* Order for Psudo-Classes: Lord Vader Former Handle Anakin */
+nav a:link {
+  color: #CDCDCD;
+}
+
+nav a:visited {
+  color: #CDCDCD;
+}
+
+nav a:hover {
+  color: white; 
+
+}
+
+div.flex-parent {
+  list-style: none; /* gets rid of bullets */
+  padding: 0.8rem 0 0.8rem 3rem;
+	margin: 0 0rem 0 0;
+	display: flex; /* turns the list items horizontally */
+  flex-direction: row;
+	flex-wrap: nowrap;
+  align-content: normal;
+	justify-content: center;
+  align-items: stretch;
+}
+
+a.flex-child {
+  margin-right: 2rem;
+}
+
+.borderbox {
+  box-sizing: border-box; /* HAVE TO PUT IN ALL HTML TO WORK (ALIGNS BOXES) */
+}
+
+.bcnav {
+  background-color: #719597; 
+  border-bottom: 2px solid #2D3E50;
+}
+
+/* =====FOOTER===== */
+.footer {
+  background-color: #719597;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.footer-languages {
+  padding-top: 0.8rem;
+}
+
+footer ul {
+	margin: 0rem;
+	/* padding: 0;
+	list-style-type: none; 
+  text-align: center; */
+}
+
+footer li {
+  padding: 0.05rem;
+  /* display: inline-block; */
+}
+
+footer a {
+  text-decoration: none; /* determines underline on link, if want no link write “none” */
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+footer a:link {
+  color: #CDCDCD;
+}
+
+footer a:visited {
+  color: #CDCDCD;
+}
+
+footer a:hover {
+  color: white; 
+
+}
+
+div.flex-parent-footer {
+  list-style: none; /* gets rid of bullets */
+  padding: 0.4rem 0 1.25rem 0.8rem;
+	margin: 0 0rem 0 0;
+	display: flex; /* turns the list items horizontally */
+  flex-direction: row;
+	flex-wrap: wrap; /* I changed this from the project */
+  align-content: normal;
+	justify-content: center;
+  align-items: stretch;
+}
+
+/* text center element unordered list */
+.tceul {
+  list-style: none;
+  text-align: left;
+  padding: 0 0rem 0 0rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.5em;
+  margin-right: 0.5rem;
+}
+
+/* text center element list */
+.tceli {
+  display: inline-block;
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #CDCDCD;
+}
+
+.tceli a:link {
+  color: #CDCDCD;
+}
+
+.tceli a:visited {
+  color: #CDCDCD;
+}
+
+.tceli a:hover {
+  color: white; 
+  /* opacity: 60%; */
+
+}
+
+
+/* =====INDEX===== */
+#cardControl {
+  display: none;
+}
+
+.card {
+  align-items: center;
+  background-image: linear-gradient(to bottom right, white, lightgray);
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+  padding: 50px;
+  margin-top: 5rem; /* I ADDED THIS */
+  /* transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); I ADDED THIS, BUT IT CONFLICTS WITH THE SPIN ANIMATION. MAKES THE CARD HOVER MORE SMOOTH */
+}
+
+.page-wrapper {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  color: white;
+  font-size: 32px;
+  height: 180px;
+  margin: 50px;
+  width: 180px;
+}
+
+/* =====INDEX - Card Animation===== */
+/* https://css-tricks.com/the-checkbox-hack/ */
+@keyframes psychadelic {
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+
+@keyframes spin {
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+
+/* Card animation when hover */
+.card:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-left: 8px solid #7B7A75;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card:active {
+  margin-left: 1px 1px 0;
+    box-shadow: -1px -1px 1px #000;
+    outline: 1px solid black;
+    background-image: linear-gradient(to top, #f4f5f5, #dfdddd);
+}
+
+#cardControl:checked + label {
+  animation: psychadelic 3s linear, spin 3s ease-in-out;
+}
+
+
+/* =====INDEX - Three Clickable Elements===== */
+/* text align center */
+.tac {
+  text-align: center;
+  }
+
+/* text align center font size   */
+.tacfs {
+  font-size: 2rem;
+}
+
+
+/* ======About====== */
+.about-me {
+  background-color: #F8F5F1;
+  width: 75%;
+  line-height: 125%;
+  margin: auto;
+  padding: 4em 4em 4em 4em;
+  align-self: center;
+  text-align: justify;
+}
+
+.map-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-content: space-around; */
+  justify-content: normal;
+  align-items: normal;
+  border: solid black 0.19em;
+  padding: 1em 1em;
+}
+
+.cities {
+  flex-basis: 50%;
+  padding: 0 1em 0 0.5em;
+  list-style-type: circle;
+  order: 1;
+}
+
+.map {
+  flex-basis: 50%;
+  padding: 0 0.5em 0 1em;
+  order: 2;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center; /* horizontal alignment */
+  align-items: center; /* vertical alignment */
+  padding-top: 0.5em;
+  order: 3;
+}
+
+.btn {
+  background-color: #DCB0A3; 
+  color: white; 
+  font-size: 1.25em; 
+  padding: 0.3em ; 
+  width: 100%;
+  border-color: transparent; /* borders come with color so make it transparent so I don't have to deal with it */
+  border-radius: 0.3em;
+  cursor: pointer; /* so it looks like you can click it when someone mouses over it */
+  }
+
+  .prev {
+    margin-right: 0.94em;
+  }
+
+  .btn:disabled {
+    background-color: #E1D3CC; 
+    cursor: not-allowed;
+  }
+
+  .citySelect {
+    display: none;
+  }
+    
+  .active { /* must come last to win */
+    display: block;
+  }
+
+
+
+/* =====Contact===== */
+.form-wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.event-submit-button {
+  width: 100%;
+  font-size: 1.15em;
+  background: #6A5B45;
+  border: none;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  margin: 8px 0px;
+  border-radius: 4px;
+}
+
+.event-submit-button:disabled {
+  background: #D3CBB8;
+  cursor: not-allowed;
+}
+
+input[type=text], input[type=tel], input[type=email], textarea, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

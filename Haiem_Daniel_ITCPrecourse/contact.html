@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+      </style>
+      <script src="https://kit.fontawesome.com/432bcb5cc2.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet" />    <title>Contact</title>
+</head>
+<body>
+    <nav>
+        <div class="flex-parent nav-item borderbox bcnav">
+          <a href="./index.html" class="flex-child">Home</a>
+          <a href="about.html" class="flex-child">About</a>
+          <a href="contact.html" class="flex-child">Contact</a>
+        </div> 
+      </nav>
+      <br><br>
+    <div class="form-wrapper">
+        <section>
+            <h1>Contact Me</h1>
+            <p>Please use this form to contact me and I will get back to you as soon as possible!</p>
+
+            <form onchange="validate();" action="" method="post" id="submitform">
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <!-- https://www.w3schools.com/tags/tag_span.asp -->
+                    <label for="fname">First Name:<span style="color: red">*</span></label>
+                    <input type="text"  id="fname" name="fname"  autofocus >
+
+                    <label for="lname">Last Name:</label>
+                    <input type="text"  id="lname" name="lname" value="">
+
+                    <label for="phone">Phone Number:<span style="color: red">*</span></label>
+                    <input type="tel"  id="phone" name="phone" placeholder="Full Phone Number"  >
+
+                    <label for="email">Email:<span style="color: red">*</span></label>
+                    <input type="email"  id="email" name="email"  >
+                    
+                    <label for="sapurpose">Select a Purpose:<span style="color: red">*</span></label>
+                    <select id="sapurpose"  name="sapurpose"  >
+                        <option value="" selected>Select one...</option>
+                        <option value="talk">Let's Talk!</option>
+                        <option value="hr">Professional/HR</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="collab">Let's Collaborate</option>
+                        <option value="question">Question</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="comments">Comment:<span style="color: red">*</span></label>
+                    <textarea id="comments"  name="comments"  ></textarea>
+                    
+                    <!-- class="event-submit-button" disabled -->
+                    <!-- Can't use type="submit" because it will submit. Have to make it a button -->
+                    <button type="button" value="submit" class="event-submit-button" id='button-send' disabled>Submit</button>
+                </fieldset>
+            </form>
+
+        </section>
+    </div>
+    <div>
+        <footer class="footer">
+      
+          <div class="flex-parent-footer nav-item borderbox">
+            <a href="./index.html" class="flex-child">Home</a>
+            <a href="about.html" class="flex-child">About</a>
+            <a href="contact.html" class="flex-child">Contact</a>
+           
+          </div>
+          <div class="footer-languages">
+          <span id="languages"></span>
+          <br>
+          &#169; Israel Tech Challenge
+          </div>
+    
+          <ul class="tceul"> <!-- step 3: add 3 clickable elements -->
+            <li class="tceli"><a href="https://www.linkedin.com/in/danielhaiem/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li class="tceli"><a href="https://github.com/danielhaiem" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li class="tceli"><a href="https://stackoverflow.com/users/17967931/daniel-haiem?tab=profile" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>
+          </ul>
+        </footer>
+    </div>
+    <script src="./js/portafolio.js"></script>
+</body>
+</html>
